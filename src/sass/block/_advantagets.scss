@@ -1,0 +1,51 @@
+.advantagets	{
+	min-height: 473px;
+	padding: 70px 0 78px 0 ;
+	background: #F6F6F6;
+	.title	{
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: #0D0D0D;
+	}
+	&__wrapper	{
+		display: flex;
+		justify-content:space-between;
+		margin-top: 65px;
+		
+	}
+	&__icons	{
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		margin-top: 40px;
+		width: 922px
+		}
+
+	&__descr	{
+		margin-top: 40px;
+		width: 256px;
+	}	
+	&__title	{
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		color: #0D0D0D;
+	}
+	&__subtitle	{
+		margin-top: 26px;
+		font-size: 14px;
+		font-weight: 300;
+		font-style: normal;
+		text-align: center;
+		color: #0D0D0D;
+		a	{
+			text-decoration: none;
+			color:$main-color;
+		}
+	}
+	
+		
+}
