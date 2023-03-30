@@ -14,3 +14,9 @@ const slider = tns({
 
   document.querySelector('.next').addEventListener('click',function	()	
   {slider.goTo('next')});   
+
+  $('ul.catalog__tabs').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.tabs').find('div.catalog__tab').removeClass('active').eq($(this).index()).addClass('active');
+  });
