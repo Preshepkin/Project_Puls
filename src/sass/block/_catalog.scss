@@ -39,8 +39,12 @@
 	}
 	&__content	{
 		margin-top: 60px;
-		display: flex;
+		display: none;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		&_active	{
+			display: flex;
+		}
 		
 	}
 	&-item	{
@@ -125,7 +129,7 @@
 			width: 55%;
 			transform: translateX(-100%);
 			margin-right: 0px;
-			transition: 5.0s all;
+			transition: 0.5s all;
 			&_active{
 				margin-right: 25px;
 				transform: translateX(0%);
@@ -139,7 +143,7 @@
 			padding-left: 16px;
 			padding-right: 20px;
 			transform: translateX(0%);
-			transition: 5.0s all;
+			transition: 0.5s all;
 			&_active	{
 				margin-left: 0px;
 				transform: translateX(-100%);
@@ -167,7 +171,7 @@
 		&__back	{
 			display: block;
 			position: absolute;
-			margin-top: 20px;
+			margin-top: 36px;
 			left: 40%;
 			font-weight: 500;
 			font-size: 14px;
