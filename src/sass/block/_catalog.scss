@@ -3,10 +3,10 @@
 	&__tabs{
 		display: flex;
 		justify-content: center;
+		justify-items: center;
+		align-items:center;
 		margin-bottom: 0px;
-		padding-right: 0px;
-
-		
+		padding-left: 0px;
 	}	
 	&__tab	{
 		width: 222px;
@@ -24,20 +24,28 @@
 		transform: skewX(-25deg);
 		cursor: pointer;
 		transform: 0.5s all;
+		&:hover	{
+			box-shadow: 2px 2px 20px $main-color;
+			border:none;
+		}
 		div	{
 			transform: skewX(25deg);
 		}
 		&_active	{
 			background: $main-color;
-			box-shadow: 2px 2px 20px $main-color;
 			color: #FFFFFF;
 			border:none;
 		}
 	}
 	&__content	{
-		display: flex;
-		justify-content: space-between;
 		margin-top: 60px;
+		display: none;
+		justify-content: space-between;
+		align-items:center;
+		&_active	{
+			display: flex;
+		}
+		
 	}
 	&-item	{
 		overflow: hidden;
@@ -132,7 +140,7 @@
 			margin-left: 20px;
 			width: 50%;
 			margin-bottom: 0px;
-			padding-left: 10px;
+			padding-left: 19px;
 			padding-right: 20px;
 			transform: translateX(0%);
 			transition: 5.0s all;

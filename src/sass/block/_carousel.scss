@@ -6,23 +6,7 @@
 		width: 750px;
 	}
 }
-// .slick-prev,	.slick-next	{
-// 	position: absolute;
-// 	border:none;
-// 	top: 50%;
-// 	left: -66px;
-// 	transform: translateY(-50%);
-// 	background-color:rgb(255, 255, 255);
-// 	img	{
-// 		width: 30px;
-// 		height: 50px;
-// 	}
-// }	
-// .slick-next	{
-// 	right: -66px;
-// 	left: auto;
-// }
-.prev,	.next	{
+.slick-prev,	.slick-next	{
 	position: absolute;
 	border:none;
 	top: 50%;
@@ -34,15 +18,7 @@
 		height: 50px;
 	}
 }	
-	.tns-item{
-		img	{
-			display: block;
-			margin: 0 auto;
-		}
-	}
-
-.next	{
+.slick-next	{
 	right: -66px;
 	left: auto;
 }
-	
