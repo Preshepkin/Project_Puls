@@ -1,15 +1,16 @@
 @import	'base/vareables';
-@import	'block/promo';
-@import	'block/header';
-@import	'block/buttons';
-@import	'block/advantagets';
-@import 'block/titles';
-@import	'block/consultation';
-@import	'block/forms';
-@import	'block/carousel';
-@import	'block/catalog';
-@import	'block/feed';
-@import	'block/footer';
+@import	'blocks/promo';
+@import	'blocks/header';
+@import	'blocks/buttons';
+@import	'blocks/advantagets';
+@import 'blocks/titles';
+@import	'blocks/consultation';
+@import	'blocks/forms';
+@import	'blocks/carousel';
+@import	'blocks/catalog';
+@import	'blocks/feed';
+@import	'blocks/footer';
+@import	'blocks/modal';
 
 *{
 	font-family:'Museo Sans Cyrl', sans-serif;
