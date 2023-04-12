@@ -71,120 +71,39 @@ $(document).ready(function(){
 		})
 	});
 
-
-
-	$('#consultation-form').validate({
-		errorClass: 'onerror',
-		rules: {
-			name: {
-				required: true,
-				minlength: 4
+	function validateForms(form) {
+		$(form).validate({
+			errorClass: 'onerror',
+			rules: {
+				name: {
+					required: true,
+					minlength: 4
+				  },
+				phone: {
+					required: true,
+					phone: true
+				  },
+				email: {
+				  required: true,
+				  email: true
+				}
 			  },
-			phone: {
-				required: true,
-				phone: true
-			  },
-			email: {
-			  required: true,
-			  email: true
-			}
-		  },
-		  messages: {
-			name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
-			phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
-			email: {
-			  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
-			  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
-			  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
-			}
-		  }
-	});
-
-	$('#consultation form').validate({
-		errorClass: 'onerror',
-		rules: {
-			name: {
-				required: true,
-				minlength: 4
-			  },
-			phone: {
-				required: true,
-				phone: true
-			  },
-			email: {
-			  required: true,
-			  email: true
-			}
-		  },
-		  messages: {
-			name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
-			phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
-			email: {
-			  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
-			  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
-			  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
-			}
-		  }
-	});
-
-	$('#order form').validate({
-		errorClass: 'onerror',
-		rules: {
-			name: {
-				required: true,
-				minlength: 4
-			  },
-			phone: {
-				required: true,
-				phone: true
-			  },
-			email: {
-			  required: true,
-			  email: true
-			}
-		  },
-		  messages: {
-			name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
-			phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
-			email: {
-			  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
-			  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
-			  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
-			}
-		  }
-	});
-
-	// function validateForms(form)
-	// ('form').validate({
-	// 	errorClass: 'onerror',
-	// 	rules: {
-	// 		name: {
-	// 			required: true,
-	// 			minlength: 4
-	// 		  },
-	// 		phone: {
-	// 			required: true,
-	// 			phone: true
-	// 		  },
-	// 		email: {
-	// 		  required: true,
-	// 		  email: true
-	// 		}
-	// 	  },
-	// 	  messages: {
-	// 		name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
-	// 		phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
-	// 		email: {
-	// 		  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
-	// 		  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
-	// 		  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
-	// 		}
-	// 	  }
-	// });
-
-	// validateForms('#consultation-form');
-	// validateForms('#consultation form');
-	// validateForms('#order form');
+			  messages: {
+				name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
+				phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
+				email: {
+				  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
+				  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
+				  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
+				}
+			  }
+		});
+	
+	}
+	
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
 
 	});
 
