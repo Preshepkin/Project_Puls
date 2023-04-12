@@ -74,8 +74,8 @@ $(document).ready(function(){
 
 
 	$('#consultation-form').validate({
+		errorClass: 'onerror',
 		rules: {
-			errorClass: 'onerror',
 			name: {
 				required: true,
 				minlength: 4
