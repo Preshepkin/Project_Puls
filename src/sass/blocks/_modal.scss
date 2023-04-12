@@ -43,7 +43,22 @@
 		text-align: center;
 		color: #0D0D0D;
 	}	
+	label		{
+		border: 1px solid color red;
+		text-align: center;
+		border-bottom: 15px;
+		.erorr	{
+			border: 1px solid color red;
+			text-align: center;
+			border-bottom: 15px;
+		}	
+
+	}
+	
+	
 }
+
+
 #consultation, #order, #thanks	{
 	display: none;
 }
