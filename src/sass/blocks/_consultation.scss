@@ -10,15 +10,15 @@
 		line-height: 30px;
 		color: #FFFFFF;
 	}
-	.erorr	{
-		border: 2px solid color red;
-		text-align: center;
-		border-bottom: 15px;
+	.onerror	{
+		border: 1px solid red;
+		color:rgb(255, 255, 255);
 
 	}
-	label 	{
-		border:none;
-		color:#FFFFFF
-		
-	}
+		label.onerror	{
+			border-bottom:15px;
+			text-align: center;
+			border: none;
+			
+		}
 }

@@ -75,6 +75,7 @@ $(document).ready(function(){
 
 	$('#consultation-form').validate({
 		rules: {
+			errorClass: 'onerror',
 			name: {
 				required: true,
 				minlength: 4
@@ -99,7 +100,8 @@ $(document).ready(function(){
 		  }
 	});
 
-	$("#consultation form").validate({
+	$('#consultation form').validate({
+		errorClass: 'onerror',
 		rules: {
 			name: {
 				required: true,
@@ -126,6 +128,7 @@ $(document).ready(function(){
 	});
 
 	$('#order form').validate({
+		errorClass: 'onerror',
 		rules: {
 			name: {
 				required: true,
@@ -151,40 +154,37 @@ $(document).ready(function(){
 		  }
 	});
 
-
-	// function valideFroms(form) {
-	// 	$('form').validate({
-	// 		rules: {
-	// 			name: {
-	// 				required: true,
-	// 				minlength: 4
-	// 			  },
-	// 			phone: {
-	// 				required: true,
-	// 				phone: true
-	// 			  },
-	// 			email: {
-	// 			  required: true,
-	// 			  email: true
-	// 			}
+	// function validateForms(form)
+	// ('form').validate({
+	// 	errorClass: 'onerror',
+	// 	rules: {
+	// 		name: {
+	// 			required: true,
+	// 			minlength: 4
 	// 		  },
-	// 		  messages: {
-	// 			name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
-	// 			phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
-	// 			email: {
-	// 			  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
-	// 			  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
-	// 			  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
-	// 			}
-	// 		  }
-	// 	});
+	// 		phone: {
+	// 			required: true,
+	// 			phone: true
+	// 		  },
+	// 		email: {
+	// 		  required: true,
+	// 		  email: true
+	// 		}
+	// 	  },
+	// 	  messages: {
+	// 		name: "ПОЖАЛУЙСТА!!! Ведите своё имя!!!",
+	// 		phone:'Милейший(ая)!!! Ведите свой номер тефона!!!',
+	// 		email: {
+	// 		  required: "Нам нужен ваш адрес электронной почты, чтобы связаться с вами",
+	// 		  email: "Ваш адрес электронной почты должен быть в формате  name@domain.com",
+	// 		  minlength: jQuery.validator.format("Требуется не менее {0} символов!")
+	// 		}
+	// 	  }
+	// });
 
-	// }
-
-	// $('form').validate();
-	// $('form').validate();
-	// $('form').validate();
-
+	// validateForms('#consultation-form');
+	// validateForms('#consultation form');
+	// validateForms('#order form');
 
 	});
 
