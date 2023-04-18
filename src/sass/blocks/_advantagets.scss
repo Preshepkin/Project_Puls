@@ -1,21 +1,11 @@
 .advantagets	{
-	min-height: 473px;
-	padding: 70px 0 78px 0 ;
+	min-height: 475px;
+	padding: 73px;
 	background: #F6F6F6;
-	.title	{
-		font-style: normal;
-		font-weight: 700;
-		font-size: 30px;
-		line-height: 30px;
-		text-align: center;
-		color: #0D0D0D;
-	}
 	&__wrapper	{
 		display: flex;
-		justify-content:space-between;
-		margin-top: 65px;
-		
 	}
+	
 	&__icons	{
 		display: flex;
 		justify-content: space-between;
