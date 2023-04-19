@@ -11,22 +11,31 @@ $(document).ready(function(){
 			{
 			  breakpoint: 991,
 			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
 				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 1
 			  }
 			},
 			{
 			  breakpoint: 767,
 			  settings: {
-				arrows: false,
-				centerMode: true,
-				centerPadding: '40px',
-				slidesToShow: 1
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true
 			  }
-			}
-		  ],
+			},
+			{
+				breakpoint: 575,
+				settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  dots: true
+				}
+			  }
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
 	  });
 
 
