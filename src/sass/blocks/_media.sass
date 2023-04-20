@@ -1,4 +1,10 @@
 @media (max-width:1200px)
+	.catalog	
+		&__content
+			justify-content: space-around
+	.footer	
+		&__info
+			display: none		
 
 
 @media (max-width:991px)
@@ -34,8 +40,13 @@
 	.consultation	
 		.title_left
 			font-size: 34px	
-	
-				
+	.footer	
+		&__info
+			display: none
+		
+	.place-card, .place-card-large
+			display: grid
+
 @media (max-width:767px)
 	.promo
 		&__wrapper
@@ -44,7 +55,8 @@
 		&__header
 			font-size: 35px	
 		&__subheader
-			font-size: 15px	
+			font-size: 14px	
+			text-align: center
 	.header	
 		display: flex
 		flex-direction: column
@@ -83,24 +95,46 @@
 		display: none	
 	#slick-slide-control02	
 		display: none	
+	.feed
+		&__descr
+			line-height: 20px
+			width: 500px	
 
 @media (max-width:575px)
 	.promo
 		&__header
 			font-size: 24px	
 		&__subheader
-			font-size: 15px	
-			text-align: center
+			font-size: 14px	
+			width: 275px
 		&__icons
 			width: 315px					
 	.advantagets
 		.title	
-			font-size: 19px
+			font-size: 20px
 	.consultation 
 		.title_left 
-    		font-size: 20px
-					
-
+			font-size: 20px
+			line-height: 30px
+		&__descr
+			margin-top: 10px
+			font-size: 18px
+	.feed
+		&__descr
+			width: 305px
+		.title	
+			font-size: 25px		
+	.madal
+		&__close	
+			right: 0	
+	#consultation
+		width: auto	
+	#order	
+		width: auto
+	#thanks
+		width: auto			
+	.feed-for, .feed-form_mt25
+			width: auto
 
 
 				
