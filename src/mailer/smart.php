@@ -1,4 +1,6 @@
 <?php 
+require 'PHPMailerAutoload.php';
+
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -11,15 +13,15 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'B3rdman@list.ru';                 // Наш логин
-$mail->Password = 'bk73b3rdmen729list';                           // Наш пароль от ящика
+$mail->Username = 'kirill.preshepkin@yandex.ru';                 // Наш логин
+$mail->Password = 'wuvnrmdsobbyhnyi';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('B3rdman@list.ru', 'Pulse');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->setFrom('kirill.preshepkin@yandex.ru', 'Pulse');   // От кого письмо 
+$mail->addAddress('vaviloh411@saeoil.com');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
