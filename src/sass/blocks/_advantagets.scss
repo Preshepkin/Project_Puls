@@ -6,7 +6,7 @@
 		display: flex;
 	}
 	
-	&__icons	{
+	&__item	{
 		display: flex;
 		justify-content: space-between;
 		text-align: center;
@@ -34,6 +34,17 @@
 		a	{
 			text-decoration: none;
 			color:$main-color;
+		}
+	}
+	&__icon	{
+		&_animation {
+			animation-name: heartbeat;
+			animation-duration: 1.5s;
+			animation-timing-function: ease;
+			animation-iteration-count:infinite;
+			&:hover	{
+				animation-play-state:paused;
+			}
 		}
 	}
 	
