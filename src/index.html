@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Puls</title>
 </head>
@@ -32,7 +32,7 @@
 			<h1 class="promo__header">Подбор пульсометра</h1>
 			<h2 class="promo__subheader">с учётом предварительного уровня квалификации</h2>
 			<div class="promo__icons">
-				<div class="promo__icon">
+				<div class="promo__icon	animate__swing wow"	data-wow-duration="0.5s" data-wow-delay="0.2s">
 					<img src="icons/timer.png" alt="timer">
 					Время подбора: 10 минут</div>
 				<div class="promo__icon">
@@ -445,11 +445,9 @@
 	<section class="feed">
 	<div class="container">
 		<div class="title">отзывы клиентов</div>
-			<div class="feed__content">
-				<div class="feed__item">
-					<img src="img/photo_1.png" alt="photo">
-				</div>
-				<div class="feed__block">
+				<div class="feed__item	animate__fadeInUp wow"	data-wow-duration="1s" data-wow-delay="1s"> 
+					<img src="img/photo_1.png" alt="Ирина Иванченко" class="photo_1">
+					<div class="feed__block">
 					<div class="feed__title">Ирина Иванченко </div>
 					<div class="feed__subtitle">2 полумарафона</div>
 					<div class="feed__descr">
@@ -461,10 +459,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="feed__content">
-				<div class="feed__item">
-					<img src="img/photo_2.png" alt="photo">
-				</div>
+			<div class="feed__item	animate__fadeInUp wow"	data-wow-duration="1s" data-wow-delay="1s">
+				<img src="img/photo_2.png" alt="Иван Сёмочкин">
 				<div class="feed__block">
 					<div class="feed__title">Иван Сёмочкин</div>
 					<div class="feed__subtitle">1 полумарафон</div>
@@ -476,10 +472,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="feed__content">
-				<div class="feed__item">
-					<img src="img/photo_3.png" alt="photo">
-				</div>
+			<div class="feed__item	animate__fadeInUp wow"	data-wow-duration="1s" data-wow-delay="1s">
+				<img src="img/photo_3.png" alt="Юлия Дашкина">
 				<div class="feed__block">
 					<div class="feed__title">Юлия Дашкина</div>
 					<div class="feed__subtitle">2 полумарафона</div>
@@ -491,7 +485,7 @@
 					</div>
 				</div>
 			</div>
-			</div>
+		</div>	
 	</section> 
 	<footer class="footer">
 	<div class="footer__map"></div>
@@ -553,6 +547,7 @@
 <script  src="js/slick.min.js"></script>
 <script src="js/jquery.maskedinput.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script	src="js/script.js"></script>
 </body>
 </html>

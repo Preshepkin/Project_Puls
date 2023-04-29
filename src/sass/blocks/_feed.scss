@@ -1,8 +1,9 @@
 .feed	{
 	margin-bottom: 50px;
-	&__content	{
-		margin-top: 70px;
+	&__item	{
 		display: flex;
+		margin-top: 70px;
+		align-items: center;
 	}
 	&__block	{
 		margin-left: 60px;
@@ -27,4 +28,5 @@
 		color: #0D0D0D;
 		width: 690px;
 	}
+	
 }

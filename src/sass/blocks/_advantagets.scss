@@ -38,13 +38,14 @@
 	}
 	&__icon	{
 		&_animation {
-			animation-name: heartbeat;
+			animation-name:heartbeat;
 			animation-duration: 1.5s;
-			animation-timing-function: ease;
+			animation-timing-function:steps(15, end);
 			animation-iteration-count:infinite;
 			&:hover	{
-				animation-play-state:paused;
+				animation-play-state:paused
 			}
+
 		}
 	}
 	
