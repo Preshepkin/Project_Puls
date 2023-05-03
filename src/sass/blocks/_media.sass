@@ -8,10 +8,16 @@
 
 
 @media (max-width:991px)
+	.header	
+		padding-left: 15px
+		padding-right: 15px
+	.promo
+		&__wrapper
+			padding-right: 15px
 	.advantagets
 		&__wrapper
 			flex-direction: column
-		&__icons	
+		&__item	
 			justify-content: center
 			width: 95%
 	.catalog	
@@ -39,16 +45,28 @@
 			margin-left: 0px
 	.consultation	
 		.title_left
+			padding-left: 15px
 			font-size: 34px	
+		&__descr
+			padding-left: 15px
+	.feed
+		&-form	
+			padding-left: 15px
+
+
 	.footer	
 		&__info
 			display: none
+	.pageup	
+			img
+				display: none	
 	
 @media (max-width:767px)
 	.promo
 		&__wrapper
 			display: flex
 			align-items: center
+			padding-right: 15px
 		&__header
 			font-size: 35px	
 		&__subheader
@@ -96,6 +114,9 @@
 		&__descr
 			line-height: 20px
 			width: 500px	
+	.pageup	
+		img
+			display: none					
 
 @media (max-width:575px)
 	.promo
@@ -113,10 +134,14 @@
 		.title_left 
 			font-size: 20px
 			line-height: 30px
+			padding-left: 15px
 		&__descr
 			margin-top: 10px
 			font-size: 18px
+			padding-left: 17px
 	.feed
+		&-form
+			padding-left: 15px
 		&__descr
 			width: 305px
 		.title	

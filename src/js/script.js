@@ -22,7 +22,6 @@ $(document).ready(function(){
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: false,
-				dots: true
 			  }
 			},
 			{
@@ -38,12 +37,9 @@ $(document).ready(function(){
 				breakpoint: 320,
 				settings: {
 				  arrows: false,
-				  dots: true
+				  dots: false
 				}
-			  }
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
+			  },
 		  ]
 	  });
 
